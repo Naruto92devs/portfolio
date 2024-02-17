@@ -1,0 +1,184 @@
+footer {
+    padding: 2vw 5vw;
+    border-top-left-radius: 2vw;
+    border-top-right-radius: 2vw;
+    background: #272727;
+    position: relative;
+}
+
+footer h2, footer p {
+    color: white;
+}
+
+footer .top {
+    width: 100%;
+    padding: 3vw 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .info {
+    padding: 3vw 0;
+    width: 100%;
+    border: 2px solid #475467;
+    border-left: none;
+    border-right: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .info .left {
+    width: 50%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1vw;
+    position: relative;
+}
+
+footer .info .left .f-logo {
+    width: 50%;
+    position: relative;
+    top: 0;
+}
+
+footer .info .left .socials {
+    display: flex;
+    align-items: center;
+    gap: .5vw;
+}
+
+footer .info .left .socials a:hover svg path {
+    fill: #FD853A;
+}
+
+footer .navigation {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+footer .navigation h4 {
+    font-size: 1.1vw;
+    color: #FD853A;
+}
+
+footer .navigation p:hover {
+    color: #FD853A;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+footer .copyright {
+    width: 100%;
+    padding-top: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media(max-width:980px) {
+    
+footer .navigation h4 {
+    font-size: 2vw;
+}
+}
+
+@media(max-width:600px) {
+    
+    footer {
+        padding: 5vw 5vw;
+        padding-bottom: 23vw;
+        border-top-left-radius: 5vw;
+        border-top-right-radius: 5vw;
+        background: #272727;
+    }
+    
+    footer h2 {
+        font-size: 5vw;
+    }
+    
+    footer .top {
+        padding: 5vw 0;
+    }
+    
+    footer .info {
+        padding: 6vw 0;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 7vw;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    footer .info .left {
+        width: 95%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5vw;
+        position: relative;
+    }
+    
+    footer .info .left .f-logo {
+        width: 40%;
+        position: relative;
+        top: 0;
+    }
+    
+    footer .info .left .socials {
+        display: flex;
+        align-items: center;
+        gap: 5vw;
+    }
+    
+    footer .info .left .socials a:hover svg path {
+        fill: #FD853A;
+    }
+    
+    footer .navigation {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 2.5vw;
+    }
+
+    
+    footer .navigation1 {
+        display: none;
+    }
+    
+    footer .navigation h4 {
+        font-size: 5.5vw;
+        color: #FD853A;
+    }
+    
+    footer .navigation p:hover {
+        color: #FD853A;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+    
+    
+    footer .copyright {
+        width: 100%;
+        padding-top: 4vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    footer .copyright p {
+        text-align: center;
+        width: 100%;
+    }
+
+    footer .copyright p:last-child {
+        display: none;
+    }
+}

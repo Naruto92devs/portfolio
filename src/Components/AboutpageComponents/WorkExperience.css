@@ -1,0 +1,122 @@
+.work-experience {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5vw;
+    padding: 5vw;
+    animation: fadeInDownBig 1s;
+}
+
+.work-experience p.timeline {
+    font-size: 1.4vw;
+    color: #98A2B3;
+}
+
+.work-experience .content {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.work-experience .content .row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    padding-bottom: 5vw;
+}
+
+.work-experience .content .row .left,
+.work-experience .content .row .right
+{
+    width: 35%;
+    text-align: left;
+}
+
+
+.work-experience .dot {
+    width: 4%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 48%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.work-experience .dot img {
+    width: 100%;
+}
+
+.work-experience .line {
+    width: 50%;
+    height: 100%;
+    border-style: dashed;
+    border-image-source: url("https://i.stack.imgur.com/wLdVc.png");
+    border-image-slice: 1.5;
+    border-image-repeat: round;
+    border-left: none;
+    border-bottom: none;
+    border-top: none;
+}
+
+@media(max-width:980px) {
+
+.work-experience .content .row .left,
+.work-experience .content .row .right
+{
+    width: 40%;
+    text-align: left;
+}
+
+.work-experience .content .row {
+    padding-bottom: 8vw;
+}
+
+.work-experience p.timeline {
+    font-size: 1.9vw;
+    color: #98A2B3;
+}
+
+}
+
+
+@media(max-width:600px) {
+
+    .work-experience {
+        gap: 10vw;
+    animation: fadeInLeftBig 1s;
+    }
+    
+    .work-experience p.timeline {
+        font-size: 3.5vw;
+    }
+    
+    .work-experience .content .row {
+        display: flex;
+        flex-direction: column;
+        gap: 5vw;
+        padding-left: 11%;
+        padding-bottom: 10vw;
+    }
+    
+    .work-experience .content .row .left,
+    .work-experience .content .row .right
+    {
+        width: 100%;
+    }
+    
+    
+    .work-experience .dot {
+        width: 8%;
+        top: 0;
+        left: 0;
+    }
+
+}

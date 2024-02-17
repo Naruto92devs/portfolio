@@ -1,0 +1,238 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  user-select: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: Lufga-Regular;
+  src: url(./Components/fonts/Lufga-Regular.otf);
+}
+
+@font-face {
+  font-family: Lufga-Medium;
+  src: url(./Components/fonts/Lufga-Medium.otf);
+}
+
+@font-face {
+  font-family: Lufga-semi;
+  src: url(./Components/fonts/Lufga-SemiBold.otf);
+}
+
+@font-face {
+  font-family: Lufga-bold;
+  src: url(./Components/fonts/Lufga-Bold.otf);
+}
+
+html {
+  font-family: Lufga-Regular;
+  text-decoration: none; text-decoration: none; /* Remove the underline if you want */
+  color: inherit; /* Inherit the text color from the parent */
+  -webkit-tap-highlight-color: transparent; /* Disable tap highlight on iOS */
+  -moz-tap-highlight-color: transparent; /* Disable tap highlight on iOS */
+}
+
+li {
+  list-style: none;
+}
+
+
+h1 {
+  color: #171717;
+  text-align: center;
+  font-family: 'Urbanist', sans-serif;
+  font-size: 5.7vw;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 95.566px */
+  letter-spacing: -1.433px;
+}
+
+p {
+  font-size: 1.1vw;
+  line-height: 120%;
+  font-weight: 400;
+}
+
+span {
+  color: #FD853A;
+}
+
+.span1 {
+  color: #344054;
+}
+
+h2 {
+  color: #171717;
+  font-family: Lufga-Regular;
+  font-size: 2.7vw;
+  font-style: normal;
+  line-height: 120%; /* 95.566px */
+  letter-spacing: -0.705px;
+}
+
+h3 {
+  color: #344054;
+  font-family: Lufga-semi;
+  font-size: 2.2vw;
+  font-style: normal;
+  line-height: 130%; /* 95.566px */
+  letter-spacing: -0.705px;
+}
+
+.btn1 {
+  background: #FD853A;
+  padding: 1vw 2vw;
+  font-family: Lufga-semi;
+  font-size: 1vw;
+  color: white;
+  border-radius: 20vw;
+  font-weight: 400;
+  transition: all .3s;
+  display: flex;
+  align-items: center;
+  gap: 0.3vw;
+}
+
+.btn1 img {
+  width: 1.7vw;
+  transition: all .3s;
+}
+
+.btn1:hover img {
+  transform: rotateZ(45deg);
+}
+
+.btn1:hover {
+  background: #344054;
+}
+
+/*--------------------- Pages Management ----------
+----------*/
+
+.home, .about, .my-work {
+  width: 100%;
+  height: auto;
+  padding-top: 3vw;
+}
+
+/* 
+.home {
+  animation: fadeIn 1s;
+} */
+
+/* 
+.about {
+  animation: fadeInLeft 1s;
+} */
+
+.my-work {
+  animation: bounceInDown 1s;
+}
+
+
+
+
+
+
+
+/*--------------------------- website responsive 980px-----------------
+-------------------*/
+
+@media(max-width:980px) {
+  
+  p {
+    font-size: 1.4vw;
+  }
+  
+  span {
+    color: #FD853A;
+  }
+  
+  h2 {
+    font-size: 3.2vw;
+  }
+
+  h3 {
+    font-size: 2.7vw;
+  }
+
+  .btn1 {
+    padding: 1.5vw 3vw;
+    font-size: 2vw;
+  }
+
+  
+.btn1 img {
+  width: 3vw;
+}
+  
+  
+  }
+
+/*--------------------------- website responsive 600px-----------------
+-------------------*/
+
+@media(max-width:600px) {
+
+/* body {
+  margin-bottom: 19vw;
+} */
+
+h1 {
+  font-size: 9vw;
+}
+
+p {
+  font-size: 3.2vw;
+}
+
+span {
+  color: #FD853A;
+}
+
+h2 {
+  font-size: 6.2vw;
+}
+
+h3 {
+  font-size: 4.8vw;
+}
+
+.btn1 {
+  padding: 2vw 5vw;
+  font-size: 3.7vw;
+}
+
+.btn1 img {
+  width: 5vw;
+}
+
+
+/*--------------------- Pages Management 600px ----------
+----------*/
+
+.home, .about, .my-work {
+  padding-top: 20vw;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+
+}

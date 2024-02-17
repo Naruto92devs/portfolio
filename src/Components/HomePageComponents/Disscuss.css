@@ -1,0 +1,100 @@
+.discuss {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vw;
+    padding: 5vw;
+}
+
+.send-me {
+    width: 50%;
+    position: relative;
+}
+
+.send-me input {
+    width: 100%;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 1.1vw;
+    font-weight: 400;
+    color: black;
+    padding: 1.5vw 5vw;
+    padding-right: 7vw;
+    border-radius: 20vw;
+    outline: none;
+    border: 1px solid #E4E7EC;
+}
+
+.send-me .btn1 {
+    position: absolute;
+    right: .5vw;
+    top: .55vw;
+}
+
+.send-me img {
+    width: 3.5vw;
+    padding: .5vw;
+    background: rgba(255, 234, 213, 1);
+    border-radius: 20vw;
+    position: absolute;
+    left: .5vw;
+    top: .45vw;
+}
+
+@media(max-width:980px) {
+    .discuss {
+        gap: 3vw;
+        padding: 5vw;
+    }
+    
+    .send-me {
+        width: 70%;
+    }
+    
+    .send-me input {
+        font-size: 2vw;
+        padding: 2vw 6vw;
+        padding-right: 12vw;
+    }
+    
+    .send-me .btn1 {
+        right: .5vw;
+        top: .5vw;
+    }
+    
+    .send-me img {
+        width: 5vw;
+        left: .7vw;
+        top: .7vw;
+    }
+}
+
+@media(max-width:600px) {
+    .discuss {
+        gap: 5vw;
+        padding: 10vw 5vw;
+        padding-bottom: 15vw;
+    }
+    
+    .send-me {
+        width: 95%;
+    }
+    
+    .send-me input {
+        font-size: 4vw;
+        padding: 2.9vw 10vw;
+        padding-right: 20vw;
+    }
+    
+    .send-me .btn1 {
+        right: 1vw;
+        top: 1vw;
+    }
+    
+    .send-me img {
+        width: 8vw;
+        padding: 1vw;
+        left: 1.5vw;
+        top: 1.5vw;
+    }
+}

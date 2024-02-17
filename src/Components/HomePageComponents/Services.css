@@ -1,0 +1,443 @@
+.services {
+    padding: 7vw 0vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5vw;
+    border-radius: 2.5vw;
+    background: url(../Images/service-slider-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 5vw;
+}
+
+.services:hover .nugget1, .services:hover .nugget2, .services:hover .nugget3 {
+    transform-origin: right;
+    transform: rotateZ(-120deg);
+    margin-left: 4vw;
+}
+
+.services .nugget1 {
+    position: absolute;
+    width: 30vw;
+    top: 15%;
+    left: -10vw;
+    z-index: 1;
+    transform-origin: center left;
+    animation: nugget 4s infinite alternate-reverse;
+    transition: all 4s;
+}
+
+.services .nugget2 {
+    position: absolute;
+    width: 12vw;
+    top: 10%;
+    left: 35%;
+    z-index: 1;
+    transform-origin: top left;
+    animation: nugget 4s infinite alternate-reverse;
+    transition: all 4s;
+}
+
+.services .nugget3 {
+    position: absolute;
+    width: 45vw;
+    top: 15%;
+    right: -20vw;
+    z-index: 1;
+    transform-origin: top right;
+    animation: nugget 5s infinite alternate-reverse;
+    transition: all 4s;
+}
+
+@keyframes nugget {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(-25deg);
+    }
+}
+
+.services .heading {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.services h2, .services p {
+    color: white;
+    width: 45%;
+    text-align: left;
+}
+
+/*------------------- slider -----------------
+----------*/
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    padding: 0 5vw;
+    z-index: 2;
+}
+  
+.swiper-slide {
+    text-align: left;
+    margin-bottom: 3vw;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    border: 1px solid white;
+    background: rgba(104, 104, 104, 0.3);
+    transition: all .3s;
+    backdrop-filter: blur(5px);
+    border-radius: 2vw;
+}
+
+.swiper-slide:hover {
+    background: #FD853A;
+}
+
+.swiper-slide h3 {
+    color: white;
+    font-size: 1.7vw;
+    font-weight: 600;
+    width: 100%;
+    border-bottom: 1px solid white;
+    padding: 3vw 2vw;
+    padding-bottom: 1vw;
+    border-radius: 2vw;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.services-slide .content {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.services-slide .content .drop2 {
+    position: absolute;
+    width: 90%;
+    border-radius: 2vw;
+    height: 15.7vw;
+    background: #9E9D9D;
+    z-index: 2;
+    transition: all .2s;
+    transform-origin: bottom center;
+}
+
+.services-slide .content .drop1 {
+    position: absolute;
+    width: 80%;
+    border-radius: 2vw;
+    height: 16.5vw;
+    opacity: .5;
+    background: #757575;
+    z-index: 2;
+    transform-origin: bottom center;
+    transition: all .2s;
+}
+  
+.swiper-slide .service-img {
+    width: 100%;
+    height: 15vw;
+    margin-top: 5vw;
+    margin-bottom: -.4vw;
+    border-radius: 2vw;
+    z-index: 3;
+    transform-origin: bottom center;
+    transition: all .2s;
+}
+
+.services-slide:hover .scale {
+    transform: scale(1.02);
+}
+
+.swiper-slide .arrow {
+    padding: 4%;
+    background: #1D2939;
+    border-radius: 1.4vw;
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    bottom: .5vw;
+    right: .5vw;
+    z-index: 4;
+}
+
+.swiper-slide:hover .arrow {
+    background: #FD853A;
+}
+  
+.swiper-pagination-bullet {
+    transition: width .2s;
+    transform-origin: center;
+    background: #E4E7EC;
+    opacity: 1;
+    width: .7vw;
+    height: .7vw;
+}
+  
+.swiper-pagination-bullet-active {
+    width: 3vw;
+    border-radius: 20vw;
+    background:  #FD853A;
+}
+
+.services-slide-all {
+    height: 100%;
+}
+
+@media(max-width:1599px) {
+        /*------------------- slider responsive 1600px-----------------
+----------*/
+  
+.swiper-slide {
+    margin-bottom: 6vw;
+}
+
+.swiper-slide h3 {
+    font-size: 1.9vw;
+}
+
+.services-slide .content .drop1 {
+    height: 21vw;
+}
+
+.services-slide .content .drop2 {
+    height: 20vw;
+}
+  
+.swiper-slide .service-img {
+    height: 19vw;
+    margin-top: 7vw;
+}
+}
+
+@media(max-width:980px) {
+
+    .services {
+        padding: 7vw 0vw;
+        padding-bottom: 5vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 7vw;
+        border-radius: 3.5vw;
+    }
+    
+    .services .heading {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1vw;
+    }
+
+    .services .nugget1 {
+        width: 30vw;
+        top: 5%;
+        left: -10vw;
+    }
+    
+    .services .nugget2 {
+        width: 12vw;
+        top: 28%;
+        left: 42%;
+    }
+    
+    .services .nugget3 {
+        width: 45vw;
+        top: 15%;
+        right: -20vw;
+    }
+    
+    @keyframes nugget {
+        from {
+            transform: rotateZ(0deg);
+        }
+        to {
+            transform: rotateZ(-25deg);
+        }
+    }
+    
+    .services h2, .services p {
+        width: 60%;
+        text-align: center;
+    }
+    /*------------------- slider responsive 980px-----------------
+----------*/
+  
+.swiper-slide {
+    border-radius: 3.5vw;
+    margin-bottom: 6vw;
+    margin-top: 1vw;
+}
+
+.swiper-slide h3 {
+    font-size: 3.5vw;
+    padding: 3vw 2vw;
+}
+
+
+.services-slide .content .drop1 {
+    height: 34vw;
+    border-radius: 3.5vw;
+}
+
+.services-slide .content .drop2 {
+    height: 32vw;
+    border-radius: 3.5vw;
+}
+  
+.swiper-slide .service-img {
+    height: 30vw;
+    border-radius: 3.5vw;
+    margin-top: 11vw;
+}
+
+.swiper-slide .arrow {
+    padding: 4%;
+    border-radius: 2.5vw;
+    bottom: 1.5vw;
+    right: 1.5vw;
+}
+  
+.swiper-pagination-bullet {
+    width: .9vw;
+    height: .9vw;
+}
+  
+.swiper-pagination-bullet-active {
+    width: 3vw;
+}
+}
+
+@media(max-width:600px) {
+
+    .services {
+        padding: 10vw 0vw;
+        padding-bottom: 7vw;
+        gap: 9vw;
+        border-radius: 4vw;
+    }
+    
+    .services .heading {
+        width: 100%;
+        gap: 1vw;
+    }
+    
+    .services h2, .services p {
+        width: 90%;
+    }
+    
+    .services .nugget1 {
+        width: 40vw;
+        top: 20%;
+        left: -10vw;
+    }
+    
+    .services .nugget2 {
+        width: 12vw;
+        top: 25%;
+        left: 45%;
+    }
+    
+    .services .nugget3 {
+        width: 65vw;
+        top: 30%;
+        right: -19vw;
+    }
+    
+    @keyframes nugget {
+        from {
+            transform: rotateZ(0deg);
+        }
+        to {
+            transform: rotateZ(-25deg);
+        }
+    }
+
+    /*------------------- slider responsive 600px-----------------
+----------*/
+  
+.swiper-slide {
+    border-radius: 5vw;
+    margin-bottom: 12vw;
+    margin-top: 2vw;
+}
+
+.swiper-slide h3 {
+    font-size: 5vw;
+    padding: 4vw 3vw;
+}
+
+
+.services-slide .content .drop1 {
+    height: 51vw;
+    border-radius: 5vw;
+}
+
+.services-slide .content .drop2 {
+    height: 48vw;
+    border-radius: 5vw;
+}
+  
+.swiper-slide .service-img {
+    height: 45vw;
+    border-radius: 5vw;
+    margin-top: 18vw;
+}
+
+.swiper-slide .arrow {
+    padding: 4%;
+    border-radius: 3.5vw;
+    bottom: 2vw;
+    right:2vw;
+}
+}
+
+@media(max-width:300px) {
+
+    .swiper-slide h3 {
+        padding: 4vw;
+        font-size: 8vw;
+    }
+
+    .services-slide .content .drop1 {
+        height: 63vw;
+        border-radius: 5vw;
+    }
+    
+    .services-slide .content .drop2 {
+        height: 59vw;
+        border-radius: 5vw;
+    }
+      
+    .swiper-slide .service-img {
+        height: 55vw;
+        border-radius: 5vw;
+        margin-top: 20vw;
+    }
+    
+    .swiper-slide .arrow {
+        padding: 3.5%;
+        border-radius: 4vw;
+        bottom: 3vw;
+        right: 3vw;
+    }
+
+    
+}

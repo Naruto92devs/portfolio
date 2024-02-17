@@ -1,0 +1,47 @@
+.service {
+    width: 100%;
+    height: auto;
+    /* padding: 5vw; */
+    border-radius: 0;
+    margin-bottom: -2vw;
+    padding-bottom: 10vw;
+}
+
+@media(max-width:980px) {
+    .service {
+        margin-top: -10vw;
+        padding-top: 15vw;
+    }
+
+    .service .nugget1 {
+        top: 18%;
+    }
+    
+    .services .nugget2 {
+        top: 30%;
+    }
+    
+    .services .nugget3 {
+        top: 30%;
+    }
+}
+
+@media(max-width:600px) {
+    .service {
+        padding-top: 30vw;
+        margin-bottom: -7vw;
+        gap: 13vw;
+    }
+
+    .service .nugget1 {
+        top: 31%;
+    }
+    
+    .services .nugget2 {
+        top: 33%;
+    }
+    
+    .services .nugget3 {
+        top: 55%;
+    }
+}

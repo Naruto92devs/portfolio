@@ -1,0 +1,156 @@
+.resume {
+    width: 100%;
+    height: auto;
+    background: #F2F4F7;
+    padding: 5vw 5vw;
+    padding-bottom: 8vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vw;
+    justify-content: space-around;
+    margin-bottom: -4vw;
+}
+
+.resume .left {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.resume .left .img1 {
+    width: 75%;
+    z-index: 2;
+    animation: bounceInDown .5s;
+}
+
+.resume .right {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5vw;
+    text-align: center;
+}
+
+.resume .right p {
+    color: #98A2B3;
+    padding-right: 30%;
+}
+
+@media(max-width:1200px) {
+
+    .resume {
+        height: 100vw;
+        justify-content: center;
+    }
+
+    .resume .left {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+    
+    .resume .left .img1 {
+        width: 75%;
+        z-index: 2;
+        animation: bounceInDown .5s;
+    }
+}
+
+@media(max-width:980px) {
+
+    .resume {
+        padding-top: 15vw;
+        height: 100vw;
+        padding-bottom: 9vw;
+        justify-content: center;
+    }
+
+    .resume .left {
+        width: 88%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+    
+    .resume .left .img1 {
+        width: 75%;
+        z-index: 2;
+        animation: bounceInDown .5s;
+    }
+
+    .resume .right p {
+        color: #98A2B3;
+        padding-right: 13%;
+    }
+    
+    .resume h2 {
+    font-size: 4.5vw;
+    }
+}
+
+@media(max-width:600px) {
+    .resume {
+        width: 100%;
+        height: auto;
+        background: #F2F4F7;
+        padding: 15vw 10vw;
+        padding-top: 25vw;
+        display: flex;
+        flex-direction: column;
+        gap: 4vw;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .resume .left {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+    
+    .resume .left .img1 {
+        width: 100%;
+        z-index: 2;
+        transition: all .2s;
+    }
+    
+    .resume .right {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2vw;
+        text-align: center;
+    }
+
+    .resume div h2 {
+        font-size: 7.5vw;
+        }
+    
+    .resume .right p {
+        color: #98A2B3;
+        padding-right: 0%;
+    }
+    
+    .resume .right .achievements {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    
+    .resume .right .achievements .left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 40%;
+    }
+}

@@ -1,0 +1,181 @@
+.WhyHire {
+    width: 100%;
+    height: auto;
+    background: #F2F4F7;
+    border-radius: 3vw;
+    padding: 8vw 5vw;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+.WhyHire .left {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.WhyHire .left .img1 {
+    width: 75%;
+    z-index: 2;
+    transition: all .2s;
+}
+
+.WhyHire .left .img2 {
+    width: 110%;
+    position: absolute;
+    bottom: 0vw;
+    z-index: 1;
+    transform-origin: bottom center;
+    transform: scale(0);
+    transition: all .3s;
+}
+
+.WhyHire .left .img1:hover + .img2 {
+    transform: scale(1);
+}
+
+.WhyHire .left .img2.active {
+    transform: scale(1);
+}
+
+.WhyHire .right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.5vw;
+    text-align: left;
+}
+
+.WhyHire .right p {
+    color: #98A2B3;
+    padding-right: 30%;
+}
+
+.WhyHire .right .achievements {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.WhyHire .right .achievements .left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 40%;
+}
+
+.WhyHire .right a {
+    text-decoration: none;
+    font-family: Lufga-semi;
+    font-size: 1.2vw;
+    color: #151515;
+    padding: 1.5vw 2.5vw;
+    border-radius: 1.5vw;
+    border: 1px solid #151515;
+}
+
+.WhyHire .right a:hover {
+    background: #000000;
+    color: #F2F4F7;
+}
+
+@media(max-width:980px) {
+    .WhyHire .right p {
+        color: #98A2B3;
+        padding-right: 13%;
+    }
+}
+
+@media(max-width:600px) {
+    .WhyHire {
+        width: 100%;
+        height: auto;
+        background: #F2F4F7;
+        border-radius: 8vw;
+        padding: 10vw 10vw;
+        display: flex;
+        flex-direction: column;
+        gap: 10vw;
+        align-items: center;
+        justify-content: space-around;
+  animation: fadeInRightBig 1s;
+    }
+    
+    .WhyHire .left {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+    
+    .WhyHire .left .img1 {
+        width: 90%;
+        z-index: 2;
+        transition: all .2s;
+    }
+    
+    .WhyHire .left .img2 {
+        width: 120%;
+        position: absolute;
+        bottom: 0vw;
+        z-index: 1;
+        transform-origin: bottom center;
+        transform: scale(0);
+        transition: all .3s;
+    }
+    
+    .WhyHire .left .img1:hover + .img2 {
+        transform: scale(1);
+    }
+    
+    .WhyHire .left .img2.active {
+        transform: scale(1);
+    }
+    
+    .WhyHire .right {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5vw;
+        text-align: center;
+    }
+    
+    .WhyHire .right p {
+        color: #98A2B3;
+        padding-right: 0%;
+    }
+    
+    .WhyHire .right .achievements {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    
+    .WhyHire .right .achievements .left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 40%;
+    }
+    
+    .WhyHire .right a {
+        text-decoration: none;
+        font-family: Lufga-semi;
+        font-size: 3.5vw;
+        color: #151515;
+        padding: 3.5vw 5vw;
+        border-radius: 3.5vw;
+        border: 1px solid #151515;
+    }
+    
+    .WhyHire .right a:hover {
+        background: #000000;
+        color: #F2F4F7;
+    }
+}

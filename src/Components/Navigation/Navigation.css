@@ -1,0 +1,192 @@
+/*---------------------- Navbar Management -------------------------
+------------------*/
+
+.icon {
+    display: none;
+  }
+  
+  .header {
+    padding: 0vw 0vw 0 0vw;
+    position: sticky;
+    top: 0vw;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  nav {
+    background: #171717;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5vw 5vw;
+    border-radius: 0vw;
+  }
+  
+  nav .link li {
+    line-height: 100%;
+    color: white;
+    transition: all 0s;
+    padding: 1.2vw 2.1vw;
+    border-radius: 23vw;
+    font-size: 1.3vw;
+    font-weight: 300;
+    cursor: pointer;
+  }
+
+  nav .active li {
+    background: rgba(253, 133, 58, 1);
+    /* color: #1D2939; */
+  }
+
+  nav .active svg path {
+    /* fill: rgba(253, 133, 58, .5); */
+    stroke: #FD853A;
+  }
+  
+  .nav-logo {
+    width: 21vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .logo-changer {
+    width: 45%;
+  }
+  
+  .logo-changer .logo {
+    width: 100%;
+  }
+  
+  .logo-changer .madeby {
+    width: 100%;
+    display: none;
+  }
+  
+  .logo-changer:hover {
+    width: 56%;
+  }
+  
+  .logo-changer:hover .logo {
+    display: none;
+  }
+  
+  .logo-changer:hover .madeby {
+    display: flex;
+  }
+
+@media(max-width:980px) {
+
+  .header {
+    padding: 1vw 5vw;
+  }
+
+  nav {
+    padding: 1vw 1vw;
+    border-radius: 20vw;
+  }
+
+  nav .link li {
+    font-size: 1.7vw;
+  }
+
+  .logo-changer {
+    width: 60%;
+  }
+  
+  .logo-changer:hover {
+    width: 70%;
+  }
+}
+
+@media(max-width:600px) {
+    /*------------------ Navbar Management 600px-------------------------
+------------------*/
+
+nav .active li {
+  background: rgba(253, 133, 58, 1);
+  /* color: #1D2939; */
+}
+
+.contact {
+    position: fixed;
+    right: 7vw;
+    bottom: 25vw;
+    padding: 3vw;
+    border-radius: 4vw;
+    background: #1D2939;
+  }
+  
+  .contact:hover {
+    background: #FD853A;
+  }
+  
+  .contact li {
+    display: none
+  }
+  
+  .icon {
+    display: flex;
+    width: 7vw;
+  }
+  
+  nav .link li {
+    padding: 1.5vw 2.5vw;
+    font-size: 3vw;
+  }
+  
+  .header {
+    padding: 0vw;
+    position: fixed;
+    top: initial;
+    bottom: 0vw;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  nav {
+    background: #1D2939;
+    padding: 5vw 5vw;
+    padding-bottom: 2vw;
+    border-radius: 0vw;
+    border-top-right-radius: 7vw;
+    border-top-left-radius: 7vw;
+    width: 100%;
+  }
+  
+  nav .link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vw;
+  }
+  
+  .nav-logo {
+    width: 34vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 1vw;
+    left: 33vw;
+    border-radius: 20vw;
+    border-bottom-right-radius: 20vw;
+    background: #1D2939;
+    padding: 2vw 3vw;
+  }
+  
+  .logo-changer {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .logo-changer:hover {
+    width: 100%;
+  }
+}
