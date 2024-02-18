@@ -35,7 +35,7 @@ const Hero = () => {
                 <div className="intro">
                     <div className="name" id="name">
                         <li>Hello!</li>
-                        <h1>I'm <span>Suhaib</span>,<br/>Frontend Developer</h1>
+                        <h1>I'm <span>Sohaib</span>,<br/>Frontend Developer</h1>
                         <img className="hair1" src={hair1} alt="logo"/>
                         <img className="hair2" src={hair2} alt="logo"/>
                     </div>
