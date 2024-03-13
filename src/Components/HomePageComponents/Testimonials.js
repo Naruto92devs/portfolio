@@ -57,7 +57,7 @@ const Testimonials = () => {
             coverflowEffect={{
             rotate: 0,
             stretch: -20,
-            depth: 90,
+            depth: 50,
             modifier: 1,
             slideShadows: true,
             }}
