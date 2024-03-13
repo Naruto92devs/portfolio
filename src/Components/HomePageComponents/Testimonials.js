@@ -55,7 +55,7 @@ const Testimonials = () => {
             centeredSlides={true}
             // slidesPerView={'auto'}
             coverflowEffect={{
-            rotate: 50,
+            rotate: 0,
             stretch: -20,
             depth: 100,
             modifier: 1,
