@@ -39,11 +39,11 @@ const WhyHire = () => {
             <div className="right">
                 <h2>
                     <span className="span1">Why </span>
-                    <span>Hire me </span>
+                    <span>Choose Us </span>
                     <span className="span1">?</span>
                 </h2>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lacus nunc, posuere in justo vulputate, bibendum sodales 
+                Choose Us for unparalleled expertise in frontend development. With a proven track record of delivering cutting-edge solutions, We bring creativity, precision, and a commitment to excellence to every project, ensuring your digital success.
                 </p>
                 <div className="achievements">
                     <div className="left">
@@ -56,8 +56,8 @@ const WhyHire = () => {
                     </div>
                 </div>
                 <a onMouseEnter={hireMe} onMouseLeave={notMe}
-                 id="hireme" href="#hello">
-                    Hire me
+                 id="hireme" href="https://t.me/Naruto92devs">
+                    Telegram
                 </a>
             </div>
         </div>

@@ -21,6 +21,7 @@
     width: 75%;
     z-index: 2;
     transition: all .2s;
+    animation: fadeInDown 1s;
 }
 
 .WhyHire .left .img2 {
@@ -31,6 +32,17 @@
     transform-origin: bottom center;
     transform: scale(0);
     transition: all .3s;
+    animation: scale 1s linear forwards;
+    animation-delay: 1s;
+}
+
+@keyframes scale {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
 }
 
 .WhyHire .left .img1:hover + .img2 {
@@ -97,12 +109,13 @@
         background: #F2F4F7;
         border-radius: 8vw;
         padding: 10vw 10vw;
+        padding-top: 20vw;
         display: flex;
         flex-direction: column;
         gap: 10vw;
         align-items: center;
         justify-content: space-around;
-  animation: fadeInRightBig 1s;
+  /* animation: fadeInRightBig 1s; */
     }
     
     .WhyHire .left {
@@ -117,6 +130,7 @@
         width: 90%;
         z-index: 2;
         transition: all .2s;
+        animation: fadeInDown 1s;
     }
     
     .WhyHire .left .img2 {

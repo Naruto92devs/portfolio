@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../index.css';
 import WorkExperince from "../../Components/AboutpageComponents/WorkExperience";
-import WhyHire from "../../Components/AboutpageComponents/WhyHire";
+// import WhyHire from "../../Components/AboutpageComponents/WhyHire";
 
 
 const About = () => {
@@ -22,7 +22,7 @@ const About = () => {
     return (
         <div id="about" className="about">
             <WorkExperince/>
-            <WhyHire/>
+            {/* <WhyHire/> */}
         </div>
     );
 }

@@ -39,6 +39,11 @@ const ProjectSlider = () => {
         progressCircle.current.style.setProperty('--progress', 1 - progress);
         progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
       };
+
+      const openInNewTab = (url) => {
+        const newWindow = window.open(url, '_blank');
+        newWindow.focus();
+      };
   
     return (
         <div className="project-slider">
@@ -66,81 +71,81 @@ const ProjectSlider = () => {
             onAutoplayTimeLeft={onAutoplayTimeLeft}
             className="mySwiper"
             >
-                <SwiperSlide id='slide-bg' className="swiper-project-slide">
+                <SwiperSlide onClick={() => openInNewTab('https://naruto92devs.github.io/bahamas/')} id='slide-bg' className="swiper-project-slide">
                     <p className="orangearrow">&rarr;</p>
                     <div className="detail">
                         <h4>Bahamas</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue interdum ligula a dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis orci elementum egestas lobortis.</p>
+                        <p>Click to visit the Project &#8599;</p>
                     </div>
                 </SwiperSlide>
-                <SwiperSlide id='slide-bg' className="swiper-project-slide">
+                <SwiperSlide onClick={() => openInNewTab('https://naruto92devs.github.io/realpepe/')} id='slide-bg' className="swiper-project-slide">
                     <p className="orangearrow">&rarr;</p>
                     <div className="detail">
                         <h4>Real pepe</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue interdum ligula a dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis orci elementum egestas lobortis.</p>
+                        <p>Click to visit the Project &#8599;</p>
                     </div>
                 </SwiperSlide>
-                <SwiperSlide id='slide-bg' className="swiper-project-slide">
+                <SwiperSlide onClick={() => openInNewTab('https://naruto92devs.github.io/siphon/')} id='slide-bg' className="swiper-project-slide">
                     <p className="orangearrow">&rarr;</p>
                     <div className="detail">
                         <h4>Siphon</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue interdum ligula a dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis orci elementum egestas lobortis.</p>
+                        <p>Click to visit the Project &#8599;</p>
                     </div>
                 </SwiperSlide>
-                <SwiperSlide id='slide-bg' className="swiper-project-slide">
+                <SwiperSlide onClick={() => openInNewTab('https://naruto92devs.github.io/nfa2.0/')} id='slide-bg' className="swiper-project-slide">
                     <p className="orangearrow">&rarr;</p>
                     <div className="detail">
                         <h4>Nfa 2.0</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue interdum ligula a dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis orci elementum egestas lobortis.</p>
+                        <p>Click to visit the Project &#8599;</p>
                     </div>
                 </SwiperSlide>
-                <SwiperSlide id='slide-bg' className="swiper-project-slide">
+                <SwiperSlide onClick={() => openInNewTab('https://naruto92devs.github.io/pepoodle/')} id='slide-bg' className="swiper-project-slide">
                     <p className="orangearrow">&rarr;</p>
                     <div className="detail">
                         <h4>Pepoodle</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue interdum ligula a dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis orci elementum egestas lobortis.</p>
+                        <p>Click to visit the Project &#8599;</p>
                     </div>
                 </SwiperSlide>
-                <SwiperSlide id='slide-bg' className="swiper-project-slide">
+                <SwiperSlide onClick={() => openInNewTab('https://naruto92devs.github.io/ghost/')} id='slide-bg' className="swiper-project-slide">
                     <p className="orangearrow">&rarr;</p>
                     <div className="detail">
                         <h4>Ghost</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue interdum ligula a dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis orci elementum egestas lobortis.</p>
+                        <p>Click to visit the Project &#8599;</p>
                     </div>
                 </SwiperSlide>
-                <SwiperSlide id='slide-bg' className="swiper-project-slide">
+                <SwiperSlide onClick={() => openInNewTab('https://naruto92devs.github.io/dashboard-design/')} id='slide-bg' className="swiper-project-slide">
                     <p className="orangearrow">&rarr;</p>
                     <div className="detail">
                         <h4>Dashboard</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue interdum ligula a dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis orci elementum egestas lobortis.</p>
+                        <p>Click to visit the Project &#8599;</p>
                     </div>
                 </SwiperSlide>
-                <SwiperSlide id='slide-bg' className="swiper-project-slide">
+                <SwiperSlide onClick={() => openInNewTab('https://naruto92devs.github.io/alien/')} id='slide-bg' className="swiper-project-slide">
                     <p className="orangearrow">&rarr;</p>
                     <div className="detail">
                         <h4>Alien</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue interdum ligula a dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis orci elementum egestas lobortis.</p>
+                        <p>Click to visit the Project &#8599;</p>
                     </div>
                 </SwiperSlide>
-                <SwiperSlide id='slide-bg' className="swiper-project-slide">
+                <SwiperSlide onClick={() => openInNewTab('https://naruto92devs.github.io/drakey/')} id='slide-bg' className="swiper-project-slide">
                     <p className="orangearrow">&rarr;</p>
                     <div className="detail">
                         <h4>Drakey</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue interdum ligula a dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis orci elementum egestas lobortis.</p>
+                        <p>Click to visit the Project &#8599;</p>
                     </div>
                 </SwiperSlide>
-                <SwiperSlide id='slide-bg' className="swiper-project-slide">
+                <SwiperSlide onClick={() => openInNewTab('https://naruto92devs.github.io/btcmanagement/')} id='slide-bg' className="swiper-project-slide">
                     <p className="orangearrow">&rarr;</p>
                     <div className="detail">
                         <h4>Btc Mangement</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue interdum ligula a dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis orci elementum egestas lobortis.</p>
+                        <p>Click to visit the Project &#8599;</p>
                     </div>
                 </SwiperSlide>
-                <SwiperSlide id='slide-bg' className="swiper-project-slide">
+                <SwiperSlide onClick={() => openInNewTab('https://naruto92devs.github.io/ggbond/')} id='slide-bg' className="swiper-project-slide">
                     <p className="orangearrow">&rarr;</p>
                     <div className="detail">
                         <h4>GG Bond</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue interdum ligula a dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis orci elementum egestas lobortis.</p>
+                        <p>Click to visit the Project &#8599;</p>
                     </div>
                 </SwiperSlide>
                 <div className="autoplay-progress" slot="container-end">

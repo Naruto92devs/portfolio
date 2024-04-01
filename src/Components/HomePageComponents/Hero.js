@@ -10,6 +10,11 @@ import arrow from '../Images/arrow up right.svg';
 import '../../index.css';
 import './Hero.css';
 
+const openInNewTab = (url) => {
+    const newWindow = window.open(url, '_blank');
+    newWindow.focus();
+};
+
 
 const Hero = () => {
 
@@ -35,14 +40,14 @@ const Hero = () => {
                 <div className="intro">
                     <div className="name" id="name">
                         <li>Hello!</li>
-                        <h1>I'm <span>Suhaib</span>,<br/>Frontend Developer</h1>
+                        <h1>We <span>DEVELOP</span>,<br/>YOUR IMAGINATIONS</h1>
                         <img className="hair1" src={hair1} alt="logo"/>
                         <img className="hair2" src={hair2} alt="logo"/>
                     </div>
                     <div className="experience" id="experience">
                         <div className="left">
                             <img className="quote" src={quote} alt="logo"/>
-                            <p>Jenny’s Exceptional product design ensure our website’s success.Highly Recommended</p>
+                            <p>100% responsive, Creative Animations and browser compatible to ensure our website’s success.Highly Recommended</p>
                         </div>
                         <div className="right">
                             <div className="star">
@@ -62,12 +67,12 @@ const Hero = () => {
                     <img className="mine" src={mine} loading="lazy" alt="logo"/>
                     <img className="celebration" id="celebration" src={celebration} alt="logo"/>
                     <div className="buttons">
-                            <li className="btn" onMouseEnter={hired} onMouseLeave={notHire}>
-                                Hire me
+                            <li onClick={() => openInNewTab('https://t.me/Naruto92devs')} className="btn" onMouseEnter={hired} onMouseLeave={notHire}>
+                                Inbox me
                                 <img className="arrow" src={arrow} alt="logo"/>
                             </li>
-                            <li className="btn">
-                                Portfoio
+                            <li onClick={() => openInNewTab('https://t.me/naruto_webdevs')} className="btn">
+                                TG Channel
                                 <img className="arrow" src={arrow} alt="logo"/>
                             </li>
                     </div>

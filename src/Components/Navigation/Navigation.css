@@ -52,7 +52,7 @@
   }
   
   .logo-changer {
-    width: 45%;
+    width: 56%;
   }
   
   .logo-changer .logo {
@@ -60,7 +60,7 @@
   }
   
   .logo-changer .madeby {
-    width: 100%;
+    width: 90%;
     display: none;
   }
   
@@ -166,13 +166,13 @@ nav .active li {
   }
   
   .nav-logo {
-    width: 34vw;
+    width: 40vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: fixed;
     top: 1vw;
-    left: 33vw;
+    left: 30vw;
     border-radius: 20vw;
     border-bottom-right-radius: 20vw;
     background: #1D2939;
@@ -185,8 +185,13 @@ nav .active li {
     flex-direction: column;
     align-items: center;
   }
+
+  .logo-changer .madeby {
+    width: 90%;
+    display: none;
+  }
   
   .logo-changer:hover {
-    width: 100%;
+    width: 90%;
   }
 }

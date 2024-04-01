@@ -1,6 +1,13 @@
 import React from "react";
 import '../../index.css';
+import { Link } from "react-router-dom";
 import Slideimage from '../../Components/Images/slide-img.jpg';
+import service1 from '../../Components/Images/service1.jpeg';
+import service2 from '../../Components/Images/service2.jpg';
+import service3 from '../../Components/Images/service3.jpeg';
+import service4 from '../../Components/Images/bitcoin.jpg';
+import service5 from '../../Components/Images/nfa2.0.jpg';
+import service6 from '../../Components/Images/service4.webp';
 import arrow from '../../Components/Images/arrow up right.svg';
 import nugget1 from '../../Components/Images/nugget1.png';
 import nugget2 from '../../Components/Images/nugget2.png';
@@ -45,8 +52,8 @@ const Service = () => {
             <img className="nugget2" src={nugget2} alt="logo"/>
             <img className="nugget3" src={nugget3} alt="logo"/>
             <div className="heading">
-                <h2>My <span>Services</span></h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lacus nunc, posuere in justo vulputate, bibendum sodales</p>
+                <h2>Our <span>Services</span></h2>
+                <p>Transforming pixels into captivating experiences – where innovation meets impeccable design. Elevate your digital presence with our frontend mastery.</p>
             </div>
             <Swiper
             {...serivesettings}
@@ -59,81 +66,95 @@ const Service = () => {
             className="mySwiper"
             >
                 <SwiperSlide className="services-slide">
-                    <div className="head">
-                        <h3>Websites</h3>
-                    </div>
-                    <div className="content">
-                        <div className="drop1 scale"></div>
-                        <div className="drop2 scale"></div>
-                        <img className="service-img scale" src={Slideimage} alt="logo"/>
-                        <img className="arrow" src={arrow} alt="logo"/>
-                    </div>
+                    <Link to='/projects'>
+                        <div className="head">
+                            <h3>Websites</h3>
+                        </div>
+                        <div className="content">
+                            <div className="drop1 scale"></div>
+                            <div className="drop2 scale"></div>
+                            <img className="service-img scale" src={service1} alt="logo"/>
+                            <img className="arrow" src={arrow} alt="logo"/>
+                        </div>
+                    </Link>
                 </SwiperSlide>
                 <SwiperSlide className="services-slide">
-                    <div className="head">
-                        <h3>React Apps</h3>
-                    </div>
-                    <div className="content">
-                        <div className="drop1 scale"></div>
-                        <div className="drop2 scale"></div>
-                        <img className="service-img scale" src={Slideimage} alt="logo"/>
-                        <img className="arrow" src={arrow} alt="logo"/>
-                    </div>
+                    <Link to='/projects'>
+                        <div className="head">
+                            <h3>React Apps</h3>
+                        </div>
+                        <div className="content">
+                            <div className="drop1 scale"></div>
+                            <div className="drop2 scale"></div>
+                            <img className="service-img scale" src={service2} alt="logo"/>
+                            <img className="arrow" src={arrow} alt="logo"/>
+                        </div>
+                    </Link>
                 </SwiperSlide>
                 <SwiperSlide className="services-slide">
-                    <div className="head">
-                        <h3>Ecommerce</h3>
-                    </div>
-                    <div className="content">
-                        <div className="drop1 scale"></div>
-                        <div className="drop2 scale"></div>
-                        <img className="service-img scale" src={Slideimage} alt="logo"/>
-                        <img className="arrow" src={arrow} alt="logo"/>
-                    </div>
+                    <Link to='/projects'>
+                        <div className="head">
+                            <h3>Ecommerce</h3>
+                        </div>
+                        <div className="content">
+                            <div className="drop1 scale"></div>
+                            <div className="drop2 scale"></div>
+                            <img className="service-img scale" src={service3} alt="logo"/>
+                            <img className="arrow" src={arrow} alt="logo"/>
+                        </div>
+                    </Link>
                 </SwiperSlide>
                 <SwiperSlide className="services-slide">
-                    <div className="head">
-                        <h3>Animation Websites</h3>
-                    </div>
-                    <div className="content">
-                        <div className="drop1 scale"></div>
-                        <div className="drop2 scale"></div>
-                        <img className="service-img scale" src={Slideimage} alt="logo"/>
-                        <img className="arrow" src={arrow} alt="logo"/>
-                    </div>
+                    <Link to='/projects'>
+                        <div className="head">
+                            <h3>Animation Websites</h3>
+                        </div>
+                        <div className="content">
+                            <div className="drop1 scale"></div>
+                            <div className="drop2 scale"></div>
+                            <img className="service-img scale" src={service4} alt="logo"/>
+                            <img className="arrow" src={arrow} alt="logo"/>
+                        </div>
+                    </Link>
                 </SwiperSlide>
                 <SwiperSlide className="services-slide">
-                    <div className="head">
-                        <h3>Web Applications</h3>
-                    </div>
-                    <div className="content">
-                        <div className="drop1 scale"></div>
-                        <div className="drop2 scale"></div>
-                        <img className="service-img scale" src={Slideimage} alt="logo"/>
-                        <img className="arrow" src={arrow} alt="logo"/>
-                    </div>
+                    <Link to='/projects'>
+                        <div className="head">
+                            <h3>Web Applications</h3>
+                        </div>
+                        <div className="content">
+                            <div className="drop1 scale"></div>
+                            <div className="drop2 scale"></div>
+                            <img className="service-img scale" src={Slideimage} alt="logo"/>
+                            <img className="arrow" src={arrow} alt="logo"/>
+                        </div>
+                    </Link>
                 </SwiperSlide>
                 <SwiperSlide className="services-slide">
-                    <div className="head">
-                        <h3>Vector Art Websites</h3>
-                    </div>
-                    <div className="content">
-                        <div className="drop1 scale"></div>
-                        <div className="drop2 scale"></div>
-                        <img className="service-img scale" src={Slideimage} alt="logo"/>
-                        <img className="arrow" src={arrow} alt="logo"/>
-                    </div>
+                    <Link to='/projects'>
+                        <div className="head">
+                            <h3>Vector Art Websites</h3>
+                        </div>
+                        <div className="content">
+                            <div className="drop1 scale"></div>
+                            <div className="drop2 scale"></div>
+                            <img className="service-img scale" src={service5} alt="logo"/>
+                            <img className="arrow" src={arrow} alt="logo"/>
+                        </div>
+                    </Link>
                 </SwiperSlide>
                 <SwiperSlide className="services-slide">
-                    <div className="head">
-                        <h3>Whitepapers</h3>
-                    </div>
-                    <div className="content">
-                        <div className="drop1 scale"></div>
-                        <div className="drop2 scale"></div>
-                        <img className="service-img scale" src={Slideimage} alt="logo"/>
-                        <img className="arrow" src={arrow} alt="logo"/>
-                    </div>
+                    <Link to='/projects'>
+                        <div className="head">
+                            <h3>Whitepapers</h3>
+                        </div>
+                        <div className="content">
+                            <div className="drop1 scale"></div>
+                            <div className="drop2 scale"></div>
+                            <img className="service-img scale" src={service6} alt="logo"/>
+                            <img className="arrow" src={arrow} alt="logo"/>
+                        </div>
+                    </Link>
                 </SwiperSlide>
             </Swiper>
         </div>
