@@ -32,7 +32,7 @@
 .testimonials .star2 {
     position: absolute;
     top: 10.7vw;
-    left: 27.5vw;
+    left: 26vw;
     width: 1.5vw;
 }
 
@@ -165,7 +165,7 @@
 
 .testimonials .star2 {
     top: 12.5vw;
-    left: 22.5vw;
+    left: 18.5vw;
     width: 2vw;
 }
 
@@ -252,7 +252,7 @@
     }
     
     .testimonials .star2 {
-        top: 30vw;
+        top: 37vw;
         left: 5vw;
         width: 5vw;
     }
