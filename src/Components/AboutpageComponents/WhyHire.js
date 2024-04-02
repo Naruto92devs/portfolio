@@ -47,12 +47,12 @@ const WhyHire = () => {
                 </p>
                 <div className="achievements">
                     <div className="left">
-                        <h3>450+</h3>
+                        <h3>350+</h3>
                         <p>Project Completed</p>
                     </div>
                     <div className="left">
-                        <h3>450+</h3>
-                        <p>Project Completed</p>
+                        <h3>200+</h3>
+                        <p>Crypto Coin Projects</p>
                     </div>
                 </div>
                 <a onMouseEnter={hireMe} onMouseLeave={notMe}

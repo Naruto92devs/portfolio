@@ -3,11 +3,12 @@ import '../../index.css';
 import { Link } from "react-router-dom";
 import Slideimage from '../../Components/Images/slide-img.jpg';
 import service1 from '../../Components/Images/service1.jpeg';
-import service2 from '../../Components/Images/service2.jpg';
+import service2 from '../../Components/Images/service2.jpeg';
 import service3 from '../../Components/Images/service3.jpeg';
-import service4 from '../../Components/Images/bitcoin.jpg';
-import service5 from '../../Components/Images/nfa2.0.jpg';
-import service6 from '../../Components/Images/service4.webp';
+import service4 from '../../Components/Images/service4.jpeg';
+import service5 from '../../Components/Images/service5.jpeg';
+import service6 from '../../Components/Images/service6.jpeg';
+import service7 from '../../Components/Images/service7.jpeg';
 import arrow from '../../Components/Images/arrow up right.svg';
 import nugget1 from '../../Components/Images/nugget1.png';
 import nugget2 from '../../Components/Images/nugget2.png';
@@ -28,7 +29,7 @@ const Service = () => {
             spaceBetween:80, // 2 slides per view on screens >= 0px
           },
           300: {
-            slidesPerView: 1.4,
+            slidesPerView: 1.1,
             spaceBetween:25, // 2 slides per view on screens >= 300px
           },
           600: {
@@ -40,7 +41,7 @@ const Service = () => {
             spaceBetween:50, // 3 slides per view on screens >= 980px
           },
           1600: {
-            slidesPerView: 4,
+            slidesPerView: 3.5,
             spaceBetween:50, // 3 slides per view on screens >= 1600px
           },
         },
@@ -125,7 +126,7 @@ const Service = () => {
                         <div className="content">
                             <div className="drop1 scale"></div>
                             <div className="drop2 scale"></div>
-                            <img className="service-img scale" src={Slideimage} alt="logo"/>
+                            <img className="service-img scale" src={service5} alt="logo"/>
                             <img className="arrow" src={arrow} alt="logo"/>
                         </div>
                     </Link>
@@ -138,7 +139,7 @@ const Service = () => {
                         <div className="content">
                             <div className="drop1 scale"></div>
                             <div className="drop2 scale"></div>
-                            <img className="service-img scale" src={service5} alt="logo"/>
+                            <img className="service-img scale" src={service6} alt="logo"/>
                             <img className="arrow" src={arrow} alt="logo"/>
                         </div>
                     </Link>
@@ -151,7 +152,7 @@ const Service = () => {
                         <div className="content">
                             <div className="drop1 scale"></div>
                             <div className="drop2 scale"></div>
-                            <img className="service-img scale" src={service6} alt="logo"/>
+                            <img className="service-img scale" src={service7} alt="logo"/>
                             <img className="arrow" src={arrow} alt="logo"/>
                         </div>
                     </Link>
