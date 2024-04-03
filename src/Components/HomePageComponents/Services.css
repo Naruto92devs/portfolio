@@ -4,7 +4,7 @@
     flex-direction: column;
     align-items: center;
     gap: 5vw;
-    border-radius: 2.5vw;
+    border-radius: 0vw;
     background: url(../Images/service-slider-bg.jpg);
     background-repeat: no-repeat;
     background-position: top left;
@@ -235,7 +235,7 @@
         flex-direction: column;
         align-items: center;
         gap: 7vw;
-        border-radius: 3.5vw;
+        border-radius: 0vw;
     }
     
     .services .heading {
@@ -331,7 +331,7 @@
         padding: 10vw 0vw;
         padding-bottom: 7vw;
         gap: 9vw;
-        border-radius: 4vw;
+        border-radius: 0vw;
     }
     
     .services .heading {
