@@ -1,7 +1,6 @@
 import React from "react";
 import '../../index.css';
 import { Link } from "react-router-dom";
-import Slideimage from '../../Components/Images/slide-img.jpg';
 import service1 from '../../Components/Images/service1.jpeg';
 import service2 from '../../Components/Images/service2.jpeg';
 import service3 from '../../Components/Images/service3.jpeg';
@@ -15,7 +14,7 @@ import nugget2 from '../../Components/Images/nugget2.png';
 import nugget3 from '../../Components/Images/nugget3.png';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css/bundle';
-import { Pagination } from 'swiper/modules';
+import {FreeMode, Pagination, Autoplay } from 'swiper/modules';
 import '../../Components/HomePageComponents/Services.css';
 import './Service.css';
 
@@ -59,11 +58,17 @@ const Service = () => {
             <Swiper
             {...serivesettings}
             // spaceBetween={80}
-            loop={true}
+            // loop={true}
+            rewind={true}
+            freeMode={true}
+            autoplay={{
+                delay: 3000,
+                disableOnInteraction: false,
+              }}
             pagination={{
             clickable: true,
             }}
-            modules={[Pagination]}
+            modules={[FreeMode, Pagination, Autoplay]}
             className="mySwiper"
             >
                 <SwiperSlide className="services-slide">
